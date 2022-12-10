@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Debara</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cosmina Gal">
+    <meta name="keyworsd"
+        content="atelier de arhitectura, design interior, portofoliu, case, constructi,apartament, redecorare">
+    <meta name="description"
+        content=" DEBARA este un studio/atelier de arhitectura din România care, așa cum spune și motto-ul nostru, deschide ușa spre visele tale">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <style>
+        .main-navbar {
+            background-color: rgb(0, 0, 0);
+            border-bottom: 3px solid #82735C;
+        }
+
+        .main-navbar .navbar-brand {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 0;
+            margin-right: 30px;
+
+        }
+
+        .main-navbar .navbar-brand img {
+            height: 50px;
+            text-align: right;
+            justify-content: right;
+            vertical-align: bottom;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #595442;
+        }
+
+        .main-navbar .nav-link {
+            color: #82735C;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .navbar-expand-md .navbar-collapse {
+            flex-direction: row-reverse;
+
+        }
+
+        .main-navbar .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* slider */
+        .carousel-item .ratio img {
+            object-fit: cover;
+        }
+
+        /* despre */
+        .h1,
+        h1 {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            font-size: 60px;
+            color: #020202;
+            text-transform: uppercase;
+        }
+
+        .h2,
+        h2 {
+            display: flex;
+            justify-content: right;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        /*servicii*/
+        .card {
+            margin-left: 30px;
+            margin-right: 30px;
+            background-color: #82735C;
+            width: 355px;
+            height: 300px;
+        }
+
+        .row {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .serv-culoare {
+            background-color: #0D2818;
+            padding-bottom: 30px;
+        }
+
+        .serv-culoare h2 {
+            color: #82735C;
+        }
+
+        .serv-culoare h3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .serv-culoare p {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .serv-culoare h2 {
+            margin-right: 20px;
+        }
+
+        /*proiecte*/
+        .logo {
+            height: 20px;
+        }
+
+        .card-body p {
+            color: #ffffff;
+        }
+
+        .card-body h3 {
+            color: #ffffff;
+        }
+
+        .card-body img {
+            object-fit: cover;
+        }
+
+        .proiecte-activ .carousel-control-next {
+            background-color: #0D2818
+        }
+
+        .proiecte-activ .carousel-control-prev {
+            background-color: #0D2818
+        }
+
+        .proiecte-culoare-card .card {
+            background-color: #595442;
+            width: 800px;
+            height: 600px;
+        }
+
+        .proiecte-culoare-card .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .proiecte-culoare-card .col-md-4 {
+            width: 100%;
+            padding-top: 50px;
+
+        }
+
+        .proiecte-culoare-card .col-md-8 {
+            width: 100%;
+
+        }
+
+        /* footer*/
+
+        .footer {
+            background-color: #020202;
+        }
+
+
+        .location {
+            color: #82735C;
+
+        }
+
+        .copyright p {
+            border-top: 1px solid rgba(255, 255, 255, .1);
+
+
+        }
+
+        .contact h2 {
+            color: #82735C;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 50px;
+        }
+
+        .contact p {
+            color: #82735C;
+        }
+
+        .text-white-50 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact img {
+            height: 30px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="navbar navbar-expand-md main-navbar sticky-top">
+        <nav class="container-xxl">
+            <div class="navbar-brand">
+                <a class="nav-link" href="index.html">
+                    <img src="logodebaraM.png" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav main-menu flex-column flex-md-row">
+                    <li class="nav-item"><a class="nav-link" href="#despre">Despre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicii">Servicii</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proiecte">Proiecte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- carusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="ratio ratio-21x9">
+                    <img src="carusel1.jpg" class="d-block w-100"
+                        alt="o mână care scrie cu un creion pe un fundal alb cuvântul " create" cu litere mari>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="carusel2.jpg" class="d-block w-100" alt="în imagine sunt schițe de arhitectură care pare că stau pe o masă, iar pe chițe în partea stângă
+                    se află o machetă cu o casă și în partea dreaptă este desenat schematic un calculator ">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="carusel3.jpg" class="d-block w-100" alt="imagine este o poză cu mansarda unei case cu acoperiș înclinat în partea stângă, iar pe un perete se 
+                    afla asezată o bibliotecă cu un scaun lângă">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="carusel4.jpg" class="d-block w-100"
+                        alt="imaginea prezinta un open space ce îmbină bucătăria și sufrageria, de aceea regăsim 
+                    o canapea mare in centru, bucătăria ăn spatele acesteia și o masă în partea stângă, cu un design bazat pe culori deschise ">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="carusel5.jpg" class="d-block w-100"
+                        alt="imaginea reprezintă o poză a unei mese realizată din partea se sus și pe care se găsesc
+                    un laptop, o tastatură, un sandwich, o cana de cafea și o mână care desenează pe o tabletă grafică ">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <h1>DEBARA</h1>
+    </div>
+
+    <!-- despre -->
+    <div class="container" style="margin-top: 90px;">
+
+        <div class="row mt-3">
+
+            <div class="col-12 col-md-5 col-lg-4">
+                <img class="w-100 rounded mt-4 mt-lg-0" src="foto1.jpg"
+                    alt="poza cuprinde spațiul de lucru al unui arhitect fiind prezente
+                planșe de lucru atât desfacute ce umplu poza, cât si mavheta unei case, un compas și ustensile de desenat" />
+            </div>
+            <div class="col-12 col-md-7 col-lg-8">
+                <div class="col-12">
+                    <h2 id="despre">Despre noi</h2>
+                </div>
+                <p class="text-end fs-4">DEBARA este un studio de arhitectura din România care, așa cum spune și
+                    motto-ul
+                    nostru,
+                    deschide ușa spre visele tale. Pornind de la numele companiei, ne dorim să transformăm și sa
+                    proiectam locuri care sa
+                    aducă atat confort, cat si bucurie în viețile oamenilor.</p>
+
+                <p class="text-end fs-4">
+                    Studioul a fost infintata in 2015 de către doi prieteni arhitecti, iar toata inițiativa a pornit
+                    dintr-o “debara” din Cluj-Napoca, care astăzi, datorită experienței vaste în domeniu, s-a
+                    transformat într-o
+                    companie de succes atât la nivel local, cât și la nivel național.</p>
+                <p class="text-end fs-4">Din dorința de a realiza proiecte unice care sa bifeze cerintele clientiilor
+                    nostri,
+                    dar
+                    care, în același timp, sa fie sustenabile și funcționale, am creat, DEBARA, studioul de arhitectura
+                    care promite sa inspire, să aducă bucurie, și nu în ultimul rand, sa spuna poveste fiecărui client.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- servicii -->
+    <div class="container" style="margin-top: 90px;">
+
+        <div class="serv-culoare">
+            <div class="col-12">
+                <h2 id="servicii">Servicii</h2>
+            </div>
+
+
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Proiectare&Reproictare</h3>
+                        <p class="card-text fs-5">realizăm proiecte de arhitectură și intervenții asupra unor
+                            construcții
+                            existente prin reproiectare precum: supraetajari, extinderi, reabilitări, reconversii,
+                            consolidari, amenajari funcționale</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Autorizare&Avizare</h3>
+                        <p class="card-text fs-5">te ajuta în procesul de întocmire a documentațiilor necesare obținerii
+                            autorizatiei de construire</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Consultanță <span class="badge text-bg-success">New</span></h3>
+                        <p class="card-text fs-5">oferim consultanță pe toată durata proiectului, precum și în ceea ce
+                            privește: achiziția de teren, studiu de prefezabilitate, studiu de fezabilitate,
+                            stabilire buget</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- proiecte -->
+    <div class="container" style="margin-top: 90px;">
+        <div class="col-12">
+            <h2 id="proiecte">Proiecte</h2>
+        </div>
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="proiecte-culoare-card">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card md-3" style="width: 18rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="proiecte1.jpg" class="img-fluid rounded-start"
+                                            alt="poză a unei camere care pe peretele din partea stângă are o bibliotecă cu cărți in fața căreia este așezată o mamă ce îi citește ficei sale.În partea stângă a bibliotecii este o masă cu opt scaune, iar în fața acesteia sunt doua canapele albe și o masă de cafea neagră. Camera are și o ușă spre balcon unde se afltă un bărat cu un copil.">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+
+                                    <div class="card-body">
+                                        <img class="logo" src="logodebaraM.png" />
+                                        <p class="card-title fs-1">Living</p>
+                                        <p class="card-text">Această este o casă tradițională, construită inițial în
+                                            1910, a fost regândită cu dragoste ca și o casă modernă. Amplasată într-un
+                                            sat de munte, fiecare zonă a casei renovate a fost gândită pe funcțiile
+                                            originale ale clădirii și revigorează aceste spații cu un scop proaspăt și
+                                            contemporan.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card mb-3" style="width: 18rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="proiect2.jpg" class="img-fluid rounded-start"
+                                            alt="În imagine apare o bucătărie deschisă cu un design alb si textură de lemn formată din mobila de bucătrie propriu-zisă si o masă cu opt scaune, iar în partea dreptă sunt niște scări care duc la etaj.">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <img class="logo" src="logodebaraM.png" />
+                                            <p class="card-title fs-1">Bucătărie</p>
+                                            <p class="card-text">Pentru acest client am creat mobilier custom-made
+                                                pentru zona de cafea, am amenajat spatiile pentru întâlniri și zona
+                                                pentru evenimente. Am folosit tapet 100% organic atât pentru a decora
+                                                diverse zone, dar și jaluzele din același material.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card mb-3" style="width: 18rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="proiect3.jpg" class="img-fluid rounded-start"
+                                            alt="Imaginea ilustrează o casă cu trei etaje, mansardă, terasă,piscină și un spașiu verde.">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <img class="logo" src="logodebaraM.png" />
+                                            <p class="card-title fs-1">Construcție casă</p>
+                                            <p class="card-text">Proiectul acestei case reprezintă armonia modernității
+                                                și al funcționalității. Datorită designului său simplu, casa se
+                                                construiește rapid și ieftin, în același timp fiind elegantă și
+                                                confortabilă.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card mb-3" style="width: 18rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="proiect4.jpg" class="img-fluid rounded-start"
+                                            alt="Poză a unei băi mari cu o cabină de duș deschisă și două chiuvete pe partea dreaptă.">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <img class="logo" src="logodebaraM.png" />
+                                            <p class="card-title fs-1">Reamenajare interioară</p>
+                                            <p class="card-text">Băile vintage accentuează senzația de design armonios
+                                                prin mobilier de lemn, ornamente tipice unei epoci demult apuse,
+                                                imprimeuri florale si nuanțe pastelate, dar și prin materiale
+                                                impunatoare și elegante.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card mb-3" style="width: 18rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="proiect5.jpg" class="img-fluid rounded-start"
+                                            alt="Poză a unei case cu două etaje și terasă în partea din față a casei amenajată cu canapele pe care se află două persoane.">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <img class="logo" src="logodebaraM.png" />
+                                            <p class="card-title fs-1">Design Exterior</p>
+                                            <p class="card-text">Aceasta este o clădire multifuncțională contemporană și
+                                                apartamentele învecinate oferă o comunitate vibrantă în inima orașului.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="proiecte-activ">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <div class="contact">
+                        <div class="col-12">
+                            <h2 id="contact">Contact</h2>
+                        </div>
+                        <p class="pr-5 fs-4">Spune-ne despre visul tău!
+                        </p>
+                        <p class="pr-5 fs-4">Ne găsești pe:
+                        </p>
+                        <p><a href="https://www.facebook.com/"> <img src="facebook.png" alt="logo alb facebook" /><i
+                                    class="fa fa-facebook-square mr-1"></i></a>
+                            <a href="https://www.instagram.com/"> <img src="instagram.png" alt="logo alb instagram" /><i
+                                    class="fa fa-instagram-square"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-4">Locație</h4>
+                    <p>Strada General Traian Moșoiu 71, Cluj-Napoca 400132</p>
+                    <p class="mb-0"><i class="fa fa-phone mr-3"></i> 0264 431 505</p>
+                    <p><i class="fa fa-envelope-o mr-3"></i>webmaster@fspac.ro</p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">© 2022, DEBARA All Rights Reserved.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
